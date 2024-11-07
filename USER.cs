@@ -13,10 +13,7 @@ namespace OOPProject
         public string Kadi { get => _kadi; set => _kadi = value.ToLower(); }
         public string Sifre { get => _sifre; set => _sifre = value; }
         public string Rol { get => _rol; set => _rol = value; }
-        public virtual string GetInfo()
-        {
-            return $"ID: {Id}, Kullanıcı Adı: {Kadi}, Rol: {Rol}";
-        }
+        public virtual string GetInfo();
     }
     internal sealed class Admin : USER
     {
